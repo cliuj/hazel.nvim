@@ -68,7 +68,7 @@ function M.build(palette)
     MoreMsg       = { fg = p.green },
     MsgArea       = { fg = p.fg },
     MsgSeparator  = { fg = p.float_border },
-    WarningMsg    = { fg = p.amber },
+    WarningMsg    = { fg = p.orange },
     ErrorMsg      = { fg = p.red, bold = true },
 
     SpellBad      = { sp = p.red,   undercurl = true },
@@ -86,8 +86,8 @@ function M.build(palette)
     Constant       = { fg = p.mauve },
     String         = { fg = p.green },
     Character      = { fg = p.green },
-    Number         = { fg = p.orange },
-    Float          = { fg = p.orange },
+    Number         = { fg = p.blue },
+    Float          = { fg = p.blue },
     Boolean        = { fg = p.mauve, bold = true },
 
     Identifier     = { fg = p.fg },
@@ -107,10 +107,10 @@ function M.build(palette)
     Macro          = { fg = p.mauve },
     PreCondit      = { fg = p.mauve },
 
-    Type           = { fg = p.amber },
-    StorageClass   = { fg = p.amber },
-    Structure      = { fg = p.amber },
-    Typedef        = { fg = p.amber },
+    Type           = { fg = p.teal },
+    StorageClass   = { fg = p.teal },
+    Structure      = { fg = p.teal },
+    Typedef        = { fg = p.teal },
 
     Special        = { fg = p.teal },
     SpecialChar    = { fg = p.teal },
@@ -122,15 +122,15 @@ function M.build(palette)
     Underlined     = { underline = true },
     Ignore         = { fg = p.fg_subtle },
     Error          = { fg = p.red, bold = true },
-    Todo           = { fg = p.amber, bold = true },
+    Todo           = { fg = p.teal, bold = true },
 
     -- =========================================================
     -- Treesitter
     -- =========================================================
     ["@comment"]                 = { link = "Comment" },
     ["@comment.documentation"]   = { fg = p.comment, italic = true, bold = true },
-    ["@comment.todo"]            = { fg = p.bg, bg = p.amber, bold = true },
-    ["@comment.warning"]         = { fg = p.bg, bg = p.amber, bold = true },
+    ["@comment.todo"]            = { fg = p.bg, bg = p.orange, bold = true },
+    ["@comment.warning"]         = { fg = p.bg, bg = p.orange, bold = true },
     ["@comment.error"]           = { fg = p.bg, bg = p.red,   bold = true },
     ["@comment.note"]            = { fg = p.bg, bg = p.blue,  bold = true },
 
@@ -143,8 +143,8 @@ function M.build(palette)
     ["@constant.builtin"]        = { fg = p.mauve, bold = true },
     ["@constant.macro"]          = { fg = p.mauve },
 
-    ["@module"]                  = { fg = p.amber },
-    ["@module.builtin"]          = { fg = p.amber, italic = true },
+    ["@module"]                  = { fg = p.teal },
+    ["@module.builtin"]          = { fg = p.teal, italic = true },
     ["@label"]                   = { fg = p.red },
 
     ["@string"]                  = { fg = p.green },
@@ -159,12 +159,12 @@ function M.build(palette)
     ["@character.special"]       = { fg = p.teal },
 
     ["@boolean"]                 = { fg = p.mauve, bold = true },
-    ["@number"]                  = { fg = p.orange },
-    ["@number.float"]            = { fg = p.orange },
+    ["@number"]                  = { fg = p.blue },
+    ["@number.float"]            = { fg = p.blue },
 
-    ["@type"]                    = { fg = p.amber },
-    ["@type.builtin"]            = { fg = p.amber, italic = true },
-    ["@type.definition"]         = { fg = p.amber, bold = true },
+    ["@type"]                    = { fg = p.teal },
+    ["@type.builtin"]            = { fg = p.teal, italic = true },
+    ["@type.definition"]         = { fg = p.teal, bold = true },
 
     ["@attribute"]               = { fg = p.mauve },
     ["@property"]                = { fg = p.fg_dim },
@@ -176,7 +176,7 @@ function M.build(palette)
     ["@function.method"]         = { fg = p.blue },
     ["@function.method.call"]    = { fg = p.blue },
 
-    ["@constructor"]             = { fg = p.amber },
+    ["@constructor"]             = { fg = p.teal },
     ["@operator"]                = { fg = p.fg_dim },
 
     ["@keyword"]                 = { fg = p.red },
@@ -198,7 +198,7 @@ function M.build(palette)
     ["@punctuation.special"]     = { fg = p.teal },
 
     ["@tag"]                     = { fg = p.red },
-    ["@tag.attribute"]           = { fg = p.amber, italic = true },
+    ["@tag.attribute"]           = { fg = p.teal, italic = true },
     ["@tag.delimiter"]           = { fg = p.fg_dim },
 
     ["@markup.strong"]           = { bold = true },
@@ -219,7 +219,7 @@ function M.build(palette)
 
     ["@diff.plus"]               = { fg = p.green, bg = p.diff_add },
     ["@diff.minus"]              = { fg = p.red,   bg = p.diff_delete },
-    ["@diff.delta"]              = { fg = p.amber, bg = p.diff_change },
+    ["@diff.delta"]              = { fg = p.teal, bg = p.diff_change },
 
     -- =========================================================
     -- LSP semantic tokens
@@ -252,23 +252,23 @@ function M.build(palette)
     -- Diagnostics
     -- =========================================================
     DiagnosticError            = { fg = p.red },
-    DiagnosticWarn             = { fg = p.amber },
+    DiagnosticWarn             = { fg = p.teal },
     DiagnosticInfo             = { fg = p.blue },
     DiagnosticHint             = { fg = p.teal },
     DiagnosticOk               = { fg = p.green },
 
     DiagnosticVirtualTextError = { fg = p.red,   italic = true },
-    DiagnosticVirtualTextWarn  = { fg = p.amber, italic = true },
+    DiagnosticVirtualTextWarn  = { fg = p.teal, italic = true },
     DiagnosticVirtualTextInfo  = { fg = p.blue,  italic = true },
     DiagnosticVirtualTextHint  = { fg = p.teal,  italic = true },
 
     DiagnosticUnderlineError   = { sp = p.red,   undercurl = true },
-    DiagnosticUnderlineWarn    = { sp = p.amber, undercurl = true },
+    DiagnosticUnderlineWarn    = { sp = p.teal, undercurl = true },
     DiagnosticUnderlineInfo    = { sp = p.blue,  undercurl = true },
     DiagnosticUnderlineHint    = { sp = p.teal,  undercurl = true },
 
     DiagnosticSignError        = { fg = p.red },
-    DiagnosticSignWarn         = { fg = p.amber },
+    DiagnosticSignWarn         = { fg = p.teal },
     DiagnosticSignInfo         = { fg = p.blue },
     DiagnosticSignHint         = { fg = p.teal },
 
@@ -284,10 +284,10 @@ function M.build(palette)
     -- Git signs
     -- =========================================================
     GitSignsAdd                = { fg = p.green },
-    GitSignsChange             = { fg = p.amber },
+    GitSignsChange             = { fg = p.teal },
     GitSignsDelete             = { fg = p.red },
     GitSignsAddNr              = { fg = p.green },
-    GitSignsChangeNr           = { fg = p.amber },
+    GitSignsChangeNr           = { fg = p.teal },
     GitSignsDeleteNr           = { fg = p.red },
 
     -- =========================================================
@@ -301,7 +301,7 @@ function M.build(palette)
     TelescopePreviewTitle      = { fg = p.bg, bg = p.green, bold = true },
     TelescopeResultsTitle      = { fg = p.float_bg, bg = p.float_bg },
     TelescopeSelection         = { bg = p.selection, bold = true },
-    TelescopeMatching          = { fg = p.amber, bold = true },
+    TelescopeMatching          = { fg = p.teal, bold = true },
 
     -- =========================================================
     -- NvimTree / neo-tree
@@ -309,9 +309,9 @@ function M.build(palette)
     NvimTreeNormal             = { fg = p.fg, bg = p.bg_alt },
     NvimTreeFolderName         = { fg = p.blue },
     NvimTreeOpenedFolderName   = { fg = p.blue, bold = true },
-    NvimTreeFolderIcon         = { fg = p.amber },
+    NvimTreeFolderIcon         = { fg = p.teal },
     NvimTreeRootFolder         = { fg = p.mauve, bold = true },
-    NvimTreeGitDirty           = { fg = p.amber },
+    NvimTreeGitDirty           = { fg = p.teal },
     NvimTreeGitNew             = { fg = p.green },
     NvimTreeGitDeleted         = { fg = p.red },
     NvimTreeSpecialFile        = { fg = p.mauve, underline = true },

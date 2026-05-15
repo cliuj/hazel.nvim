@@ -5,10 +5,10 @@ M.variants = {
     background = "light",
     palette = {
       -- Surfaces
-      bg             = "#e6dcc0",  -- main background (Hazel parchment)
+      bg             = "#e8dfc5",  -- main background (Hazel parchment)
       bg_alt         = "#e3dbc6",  -- statusline, tabline, sidebars
       bg_dark        = "#d8cfb6",  -- subtle accents, indent guides
-      cursorline     = "#e6dec7",  -- current line highlight
+      cursorline     = "#e3dbc6",  -- current line highlight
       selection      = "#d8cba8",  -- visual selection
       search         = "#f0d680",  -- search match
       search_cur     = "#e6b850",  -- current search match

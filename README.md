@@ -3,7 +3,7 @@
 A warm parchment (Neo)vim colorscheme with vibrant pastel accents.
 
 Variants:
-- `hazel-bright` — light, parchment background
+- `hazel-light` — light, parchment background
 
 ## Installation
 
@@ -14,7 +14,7 @@ Variants:
   lazy = false,
   priority = 1000,
   config = function()
-    vim.cmd.colorscheme("hazel-bright")
+    vim.cmd.colorscheme("hazel-light")
   end,
 }
 ```
@@ -22,14 +22,14 @@ Variants:
 ### Usage
 ###### vimscript
 ```vim
-colorscheme hazel-bright
+colorscheme hazel-light
 ```
 
 ###### lua
 ```lua
-vim.cmd.colorscheme("hazel-bright")
+vim.cmd.colorscheme("hazel-light")
 
 -- or
 
-vim.cmd[[colorscheme hazel-bright]]
+vim.cmd[[colorscheme hazel-light]]
 ```

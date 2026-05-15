@@ -5,7 +5,7 @@ local util = require("hazel.util")
 local M = {}
 
 function M.load(variant)
-  variant = variant or "bright"
+  variant = variant or "light"
   local v = colors.get(variant)
   if not v then
     error("hazel: unknown variant '" .. variant .. "'")

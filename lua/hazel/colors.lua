@@ -1,11 +1,11 @@
 local M = {}
 
 M.variants = {
-  bright = {
+  light = {
     background = "light",
     palette = {
       -- Surfaces
-      bg             = "#eee7d6",  -- main background (Hazel parchment)
+      bg             = "#e6dcc0",  -- main background (Hazel parchment)
       bg_alt         = "#e3dbc6",  -- statusline, tabline, sidebars
       bg_dark        = "#d8cfb6",  -- subtle accents, indent guides
       cursorline     = "#e6dec7",  -- current line highlight

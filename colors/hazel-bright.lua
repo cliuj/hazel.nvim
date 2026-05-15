@@ -1,0 +1,1 @@
+require("hazel").load("bright")
